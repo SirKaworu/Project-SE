@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* form label styling */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* form input styling */
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+/* form input error styling */
+input[type="email"].is-invalid,
+input[type="password"].is-invalid {
+    border-color: #dc3545;
+}
+
+.invalid-feedback {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #dc3545;
+}
+
+/* button styling */
+button[type="submit"] {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #60a5fa;
+    border: 1px solid #60a5fa;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+/* checkbox styling */
+.form-check-label {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.form-check-input {
+    margin-top: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.barn {
+    width: 200%;
+    height: 200%;
+    border-radius: 10px;
+}
